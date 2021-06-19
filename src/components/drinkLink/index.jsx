@@ -1,8 +1,12 @@
 import { CustomLink, LinkLabel } from './styles'
 
-const DrinkLink = ({ drink }) => {
+const DrinkLink = ({ drink, homeSuggestion }) => {
   return (
-    <CustomLink to={`/drink/${drink.idDrink}`} imgSrc={drink.strDrinkThumb}>
+    <CustomLink
+      homeSuggestion={homeSuggestion}
+      to={`/drink/${drink.idDrink}`}
+      imgSrc={drink.strDrinkThumb}
+    >
       <LinkLabel>{drink.strDrink}</LinkLabel>
     </CustomLink>
   )

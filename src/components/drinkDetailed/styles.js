@@ -10,6 +10,7 @@ export const Drink = styled.div`
   }
 `
 export const DrinkContent = styled.div`
+  position: relative;
   h4 {
     font-size: 3.4rem;
     margin-bottom: 1rem;
@@ -35,4 +36,12 @@ export const DrinkIngredient = styled.span`
   font-size: 1.2rem;
   font-style: italic;
   color: white;
+`
+
+export const DrinkTextAlt = styled(DrinkText)`
+  position: absolute;
+  bottom: 1rem;
+  a {
+    font-size: 1.4rem;
+  }
 `

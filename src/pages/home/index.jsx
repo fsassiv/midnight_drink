@@ -17,7 +17,7 @@ const Home = () => {
   return (
     <HomeContainer>
       <Typhography tag='h3'>Home Suggestion:</Typhography>
-      <DrinkLink drink={drink} />
+      <DrinkLink drink={drink} homeSuggestion />
     </HomeContainer>
   )
 }

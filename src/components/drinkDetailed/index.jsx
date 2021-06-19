@@ -8,6 +8,7 @@ import {
   DrinkIngredient,
   DrinkPoster,
   DrinkText,
+  DrinkTextAlt,
 } from './styles'
 
 const DrinkDetailed = ({ idDrink }) => {
@@ -48,6 +49,15 @@ const DrinkDetailed = ({ idDrink }) => {
         {ingredients.map((item) => (
           <DrinkIngredient key={item}>{item} ,</DrinkIngredient>
         ))}
+        <DrinkTextAlt>
+          <a
+            href={`https://www.youtube.com/results?search_query=${drink.strDrink}`}
+            target='_blank'
+            rel='noreferrer'
+          >
+            Youtube results for {drink.strDrink}
+          </a>
+        </DrinkTextAlt>
       </DrinkContent>
       <DrinkPoster src={drink.strDrinkThumb} />
     </Drink>
